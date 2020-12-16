@@ -1,0 +1,54 @@
+@mixin menu ($ancho,$color){
+    .cabecera__img{
+        width: $ancho;
+    }
+
+    .cabecera__menu{
+        a{
+            color: $color;
+            &:hover{
+                border-bottom: 2px $color solid;
+            }
+        }
+    }
+}
+
+@mixin flexFooter ($colorFondo,$colorTipo){
+    
+        background-color: $colorFondo;
+        .pie__contenedor{
+            width: 90%;
+            height: 70px;
+            margin: auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            .pie__copy{
+                color: $colorTipo;
+            }
+
+            .pie__redes{
+                align-items: center;
+                img{
+                    height: 20px;
+                    &:hover{
+                        transform: scale(1.5);
+                    }
+                }
+            }
+        }
+    
+}
+
+@mixin portada ($imagen) {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url($imagen);
+    background-position: center;
+    background-size: cover;
+    height: 15em;
+    margin-bottom: 2em;
+    color: $colorBlanco;
+}

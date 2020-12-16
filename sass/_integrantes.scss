@@ -1,0 +1,46 @@
+.integrantesPortada{
+    @include portada("../imagenes/Fnatic-vuelve-reinar-Vistalegre_1171092883_102588_1440x600.jpg");
+}
+
+.integrantesSeccion{
+    .contenedor{
+        display: flex;
+        align-items: stretch;
+        width: 90%;
+        margin: auto;
+        margin-bottom: 10%;
+
+        article{
+            width: 20%;
+            padding: 2%;
+            border-radius: 3%;
+            transition: box-shadow,background-color 1.5s;
+            &:hover{
+                box-shadow: $sombra;
+                background-color: $colorPrincipal;
+            }
+            &:hover p{
+                color: $colorBlanco;
+            }
+            &:hover h3{
+                color: $colorBlanco;
+            }
+            img{
+                border-radius: 50%;
+                &:hover{
+                    transform: scale(1.1);
+                }
+            }
+
+            h3{
+                color: $colorPrincipal;
+                margin: 5% 0%;
+            }
+
+            p{
+                color: $colorSecundario;
+            }
+
+        }
+    }
+}

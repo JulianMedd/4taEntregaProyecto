@@ -1,0 +1,58 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;   
+}
+
+body{
+    font-family: $tipografia;
+    text-align: center;
+}
+    header{
+        
+        .cabecera__contenedor{
+            @extend %flexMenu;
+        }
+    }
+
+    h1{
+        font-weight: 600;
+        font-size: 400%;
+    }
+
+    h2{
+        font-weight: 600;
+        font-size: 200%;
+    }
+
+    p{
+        font-weight: 500;
+
+        span{
+            font-weight: 600;
+        }
+    }
+
+    ul{
+        display: flex;
+
+        li{
+            list-style: none;
+            margin-left: 20px;
+            a{
+                text-decoration: none;
+            }
+        }
+    }
+
+#cabeceraGeneral {  
+    border-bottom: 5px $colorPrincipal solid;
+    .cabecera__contenedor{
+    @include menu(10px, $colorPrincipal);
+    }
+}
+
+#pie{
+    @include flexFooter($colorSecundario,$colorBlanco);
+    
+}

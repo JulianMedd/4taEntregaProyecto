@@ -1,0 +1,224 @@
+header .cabecera__contenedor {
+  display: flex;
+  width: 90%;
+  height: 70px;
+  margin: auto;
+  justify-content: space-between;
+  align-items: center;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  text-align: center;
+}
+
+h1 {
+  font-weight: 600;
+  font-size: 400%;
+}
+
+h2 {
+  font-weight: 600;
+  font-size: 200%;
+}
+
+p {
+  font-weight: 500;
+}
+p span {
+  font-weight: 600;
+}
+
+ul {
+  display: flex;
+}
+ul li {
+  list-style: none;
+  margin-left: 20px;
+}
+ul li a {
+  text-decoration: none;
+}
+
+#cabeceraGeneral {
+  border-bottom: 5px #0692f2 solid;
+}
+#cabeceraGeneral .cabecera__contenedor .cabecera__img {
+  width: 10px;
+}
+#cabeceraGeneral .cabecera__contenedor .cabecera__menu a {
+  color: #0692f2;
+}
+#cabeceraGeneral .cabecera__contenedor .cabecera__menu a:hover {
+  border-bottom: 2px #0692f2 solid;
+}
+
+#pie {
+  background-color: #7f7e8c;
+}
+#pie .pie__contenedor {
+  width: 90%;
+  height: 70px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#pie .pie__contenedor .pie__copy {
+  color: #ffffff;
+}
+#pie .pie__contenedor .pie__redes {
+  align-items: center;
+}
+#pie .pie__contenedor .pie__redes img {
+  height: 20px;
+}
+#pie .pie__contenedor .pie__redes img:hover {
+  transform: scale(1.5);
+}
+
+.fondoInicio {
+  background-image: url("../imagenes/FondoInicio.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+#cabeceraInicio .cabecera__contenedor .cabecera__img {
+  width: 10px;
+}
+#cabeceraInicio .cabecera__contenedor .cabecera__menu a {
+  color: #ffffff;
+}
+#cabeceraInicio .cabecera__contenedor .cabecera__menu a:hover {
+  border-bottom: 2px #ffffff solid;
+}
+
+#seccionInicio {
+  margin-bottom: 200px;
+}
+#seccionInicio .seccionInicio__contenedor img {
+  width: 30%;
+  margin-top: 10%;
+}
+#seccionInicio .seccionInicio__texto {
+  color: #ffffff;
+}
+#seccionInicio .seccionInicio__texto .seccionInicio__texto--titulo {
+  margin-bottom: 20px;
+}
+#seccionInicio .seccionInicio__texto .seccionInicio__texto--parrafo {
+  width: 40%;
+  margin: auto;
+}
+
+#pieInicio {
+  background-color: #2a2a2a;
+}
+#pieInicio .pie__contenedor {
+  width: 90%;
+  height: 70px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#pieInicio .pie__contenedor .pie__copy {
+  color: #ffffff;
+}
+#pieInicio .pie__contenedor .pie__redes {
+  align-items: center;
+}
+#pieInicio .pie__contenedor .pie__redes img {
+  height: 20px;
+}
+#pieInicio .pie__contenedor .pie__redes img:hover {
+  transform: scale(1.5);
+}
+
+.seccionNosotros .contenedor {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  align-content: center;
+  width: 90%;
+  margin: 100px auto;
+  height: 400px;
+}
+.seccionNosotros .contenedor .imagenNosotros {
+  width: 50%;
+  text-align: right;
+}
+.seccionNosotros .contenedor .imagenNosotros img {
+  width: 80%;
+}
+.seccionNosotros .contenedor .nosotrosInfo {
+  text-align: left;
+  width: 50%;
+}
+.seccionNosotros .contenedor .nosotrosInfo h1 {
+  color: #0692f2;
+}
+.seccionNosotros .contenedor .nosotrosInfo h2 {
+  color: #7f7e8c;
+}
+.seccionNosotros .contenedor .nosotrosInfo p {
+  margin-top: 10%;
+  line-height: 180%;
+  color: #7f7e8c;
+}
+
+.integrantesPortada {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: url("../imagenes/Fnatic-vuelve-reinar-Vistalegre_1171092883_102588_1440x600.jpg");
+  background-position: center;
+  background-size: cover;
+  height: 15em;
+  margin-bottom: 2em;
+  color: #ffffff;
+}
+
+.integrantesSeccion .contenedor {
+  display: flex;
+  align-items: stretch;
+  width: 90%;
+  margin: auto;
+  margin-bottom: 10%;
+}
+.integrantesSeccion .contenedor article {
+  width: 20%;
+  padding: 2%;
+  border-radius: 3%;
+  transition: box-shadow, background-color 1.5s;
+}
+.integrantesSeccion .contenedor article:hover {
+  box-shadow: 0.3em 0.2em 1em rgba(128, 128, 128, 0.65);
+  background-color: #0692f2;
+}
+.integrantesSeccion .contenedor article:hover p {
+  color: #ffffff;
+}
+.integrantesSeccion .contenedor article:hover h3 {
+  color: #ffffff;
+}
+.integrantesSeccion .contenedor article img {
+  border-radius: 50%;
+}
+.integrantesSeccion .contenedor article img:hover {
+  transform: scale(1.1);
+}
+.integrantesSeccion .contenedor article h3 {
+  color: #0692f2;
+  margin: 5% 0%;
+}
+.integrantesSeccion .contenedor article p {
+  color: #7f7e8c;
+}

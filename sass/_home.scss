@@ -1,0 +1,38 @@
+.fondoInicio{
+    background-image: url("../imagenes/FondoInicio.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;   
+}
+
+#cabeceraInicio .cabecera__contenedor{
+  @include menu(10px, $colorBlanco);
+}
+
+#seccionInicio{
+    margin-bottom: 200px;
+
+    .seccionInicio__contenedor{
+        img{
+            width: 30%;
+            margin-top: 10%;
+        }
+    }
+
+    .seccionInicio__texto{
+        color: $colorBlanco;
+
+        .seccionInicio__texto--titulo{
+            margin-bottom: 20px;
+        }
+
+        .seccionInicio__texto--parrafo{
+            width: 40%;
+            margin: auto;
+        }
+    }
+}
+ 
+#pieInicio{
+     @include flexFooter($colorNegro,$colorBlanco);
+}
